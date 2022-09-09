@@ -29,9 +29,9 @@ React Native e React
 
 O processo para a hospedagem do serviço, foi realizado da seguinte maneira: Foi criado uma conta no provedor Heroku, criando uma conta básica. O repositório do projeto foi enviado através de um push ao seguinte repositório: 
 
-https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-1-e3-proj-mov-t4-thenews_eixo3.  
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2022-2-e4-proj-infra-t2-good_luck_app  
 
-Após o processo de subida dos arquivos ao repositório, voltamos novamente ao Heroku, a realizamos o deploy da aplicação do back-end. A parte do front-end, o projeto foi mantido na nuvem, pelo site: https://snack.expo.dev/@mateusvg/news. Com o back-end ja feito o deploy, nos chamamos as rotas criadas através da interface Expo. 
+Após o processo de subida dos arquivos ao repositório, voltamos novamente ao Heroku, a realizamos o deploy da aplicação do back-end. A parte do front-end, o projeto foi mantido na nuvem, pelo site: https://snack.expo.dev/@mateusvg/goodluck. Com o back-end ja feito o deploy, nos chamamos as rotas criadas através da interface Expo. 
 
 ## Qualidade de Software
 

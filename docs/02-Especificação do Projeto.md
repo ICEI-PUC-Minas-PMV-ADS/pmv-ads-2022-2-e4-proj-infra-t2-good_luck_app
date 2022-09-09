@@ -70,7 +70,7 @@ Apresente aqui os problemas existentes que viabilizam sua proposta. Apresente o 
 
 Tendo em vista que usuários enfrentam problemas em login para realizar o sorteio pois não conseguem realizar sorteios de coisas simples sem vincular o e-mail ou a conta do instagram. Nos propomos os fluxos, de maneira simples e intuitiva, com a finalidade de facilitar a realização de qualquer tipo de sorteio. Neste contexto, a estratégia utilizada foi modelar o fluxo através do Bizagi Modeler, um programa que facilita a criação de processos e fluxos com uma abstraçã intermediária do negócio de forma geral.
 
-### Processo 1 – NOME DO PROCESSO
+### Processo 1 – Fluxo geral de navegação do sistema
 
 Apresentamos aqui, os dois principais fluxos que a aplicação dever-a realizar. Uma vez que o usuario realiza o login na plataforma, ele possui duas possibilidades, a primeira e a visualização do historico dos sorteios já realizados. Ja no segundo fluxo, o usuário poderá realizar um sorteio, salva-lo e finalizar o fluxo fazendo o logout.
 
