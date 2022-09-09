@@ -1,44 +1,64 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+Para que o projeto em desenvolvimento seja efetivo e resolutivo quanto às demandas do usuário, foi levantado, por meio de entrevistas realizadas por uma integrante do grupo com possíveis usuários da aplicação, os desejos e frustrações desses. Esses dados coletados foram explicitados na forma de personas para auxiliar-nos com um melhor escopo do projeto.  
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+A partir das entrevistas, foram definidas as personas representadas a seguir:  
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+![image](https://user-images.githubusercontent.com/83511889/188509412-7e18a416-0c6b-430d-a904-8404e6b0ad82.png)
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+>Rodolfo Moraes Idade: 26 
+>Descrição: Empresario 
+>Plataformas e apps utilizados: 
+Instagram 
+Netflix 
+Amazon Prime 
+Uber 
+Ifood 
+Spotify 
+>Motivações Promover um sorteio para maior interação dos funcionários. Aumentar a produtividade com sorteios. 
+>Frustrações Dificuldade em encontrar uma plataforma simples para promover esses sorteios sem grandes cadastros. 
+>Hobbies Leitura, Youtube.  
+
+
+![image](https://user-images.githubusercontent.com/83511889/188509616-c9723860-649a-4f62-86c4-2fac3dadedf6.png)
+>Idade: 30 
+>Descrição: Gestora Comercial  de uma Faculdade 
+>Plataformas e apps utilizados: Instagram Whatsapp  
+>Motivações: Utilizar o aplicativo para sortear Matriculas pagas para os seus funcionários. 
+>Frustrações: Dificuldade de encontrar um site intuitivo para realizar sorteios.
+>Hobbies: Filmes, séries e Redes sociais 
+
+
+![image](https://user-images.githubusercontent.com/83511889/188509778-1b6349f0-7665-47ef-88fb-b7c848394a70.png)
+
+>Idade: 21 
+>Ocupação: Influencer Digital 
+>Plataformas e apps utilizados:  Whatsapp  Instagram Facebook
+>Motivações: Utilizar o aplicativo para fazer sorteios entre os seus seguidores e aumentar o engajamento 
+>Frustrações: Não consegue fazer o cadastro em aplicativos. 
+>Hobbies: Salão, Filmes, Redes sociais e séries
+
+
+![image](https://user-images.githubusercontent.com/83511889/188509891-403e9317-e4e1-454f-b2ab-48bd95af378c.png)
+
+>Idade: 17 
+>Ocupação: Jogadora de Volei 
+>Plataformas e apps utilizados:  Whatsapp  Instagram Facebook
+>Motivações: Quer utilizar o aplicativo para sortear quem vai começar a partida na ponta. 
+>Frustrações: Dificuldade de um aplicativo super rápido para sortear. 
+>Hobbies: Redes sociais, Ifood, Instagram 
+
+
+
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+![image](https://user-images.githubusercontent.com/83511889/188510019-b909da19-62bb-4df3-a6ae-c4b6c327c445.png)
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Modelagem do Processo de Negócio 
 
@@ -73,36 +93,31 @@ Obs.: todas as informações para gerar os indicadores devem estar no diagrama d
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
+A seguir, apresentamos uma tabela que reúne e identifica os requisitos funcionais do projeto, bem como indica a prioridade em que esses devem ser executados. 
 
 ### Requisitos Funcionais
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| Existirá uma tela para cadastro  | ALTA | 
+|RF-002| Existirá uma tela de login   | ALTA  |
+|RF-003| Existirá uma tela para cadastrar os dados para o sorteio, seja numérico ou nominal.    | ALTA  |
+|RF-004| Existirá uma tela para sortear os ganhadores.    | ALTA |
+|RF-005| Os usuários a administradores do sorteio podem verificar o histórico de sorteios realizados e participados   | MÉDIA |
+|RF-006| Os usuários podem compartilhar o resultado em suas redes sociais   | BAIXA |
+|RF-007| Os usuários podem utilizar sem cadastro   | MÉDIA |
+
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
+|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | ALTA | 
 |RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-003| A plataforma deverá ser publicada em um ambiente acessível publicamente na Internet (Replit, GitHub Pages, Netlify).  |  ALTA | 
+|RNF-004| O aplicativo deverá ser thinclient.  |  ALTA | 
+|RNF-005| O aplicativo deverá ter uma fonte padrão para todas as escritas, com alterações apenas no tamanho.  |  ALTA | 
+|RNF-006| O aplicativo deve ser compatível com os principais dispositivos móveis do mercado.  |  ALTA | 
 
 ## Restrições
 
@@ -111,39 +126,27 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
+Segue abaixo o diagrama de caso de uso do nosso projeto. Ele é usado para descrever graficamente um subconjunto do modelo para simplificar a comunicação.  
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
+![image](https://user-images.githubusercontent.com/83511889/188511269-f09eaf5b-7fa4-4039-8c0f-b821882c5886.png)
 
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+
+
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+Abaixo segue a nossa matriz de rastreabilidade de requisitos. Essa matriz é fundamental para execução do nosso projeto, uma vez que caso seja feita uma alteração, sabe-se quais requisitos serão afetados com tal mudança. 
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
+ 
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+Segue tabela detalhada da Matriz de Rastreabilidade 
 
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
+![image](https://user-images.githubusercontent.com/83511889/188511311-8bb0e1b6-5740-4097-b8a3-c65bd5fec6df.png)
+![image](https://user-images.githubusercontent.com/83511889/188511323-796315f5-14bb-46ee-8348-cd1945a43880.png)
 
 
 # Gerenciamento de Projeto
@@ -152,22 +155,46 @@ De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar 
 
 ## Gerenciamento de Tempo
 
-Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A organização acontece da seguinte forma: 
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
+● Scrum Master: Natália Gatti  
 
-O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
+● Product Owner: Mateus Vitorino e Alfredo Latorre 
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+● Equipe de Desenvolvimento: Denison Amaral e Mateus Vitorino 
 
-## Gerenciamento de Equipe
+● Equipe de Design: Alfredo Latorre  
 
-O gerenciamento adequado de tarefas contribuirá para que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+ 
 
-![Simple Project Timeline](img/02-project-timeline.png)
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub e o Trello estruturado com as seguintes listas: 
 
+ 
+
+Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas à lista. 	 
+
+Para fazer: representa o Sprint Backlog - Sprint atual que estamos trabalhando.  
+
+Fazendo: quando uma tarefa é iniciada, ela é movida para esta lista. 	 
+
+Teste: checagem de Qualidade (CQ). Quando as tarefas são concluídas, elas são movidas para o CQ. No final da semana, essa lista passa por revisão para garantir que tudo está correto. 	 
+
+Feito: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontas para serem entregues ao usuário. Não há mais edições ou revisões a serem feitas. A tarefa está agendada e pronta para a ação. 
+
+Bloqueado: quando alguma coisa impede a conclusão da tarefa, ela é movida para esta lista juntamente com um comentário sobre o que está impedindo a realização da tarefa. 
+
+ Segue abaixo uma imagem do nosso quadro no trello, que está disponibilizado na URL a seguir: https://trello.com/b/nfIKyVMf/processo-de-produ%C3%A7%C3%A3o-mobile  
+ 
+ 
 ## Gestão de Orçamento
+O gerenciamento de custos do projeto, é exemplificado na tabela a seguir e inclui os processos envolvidos em estimativas, orçamento e controle dos custos, de modo que o projeto consiga ser finalizando dentro do orçamento aprovado. 
 
-O processo de determinar o orçamento do projeto é uma tarefa que depende, além dos produtos (saídas) dos processos anteriores do gerenciamento de custos, também de produtos oferecidos por outros processos de gerenciamento, como o escopo e o tempo.
+![image](https://user-images.githubusercontent.com/83511889/188511423-ca7cb454-ff39-4b61-9ec1-2b7537968764.png)
 
-![Orçamento](img/02-orcamento.png)
+
+
+Uma outra ferramenta para gerenciamento de projeto é o gráfico de Gantt, que proporciona uma melhor visualização e gerenciamento das tarefas ao longo do tempo, onde é mostrado na imagem abaixo: 
+
+ 
+ ![image](https://user-images.githubusercontent.com/83511889/188511466-e19ea719-c514-4169-9096-59dd68dfa2cc.png)
+
