@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# GOOD LUCK
 
-`CURSO`
+`PONTIFÍCIA UNIVERSIDADE CATÓLICA DE MINAS GERAIS - ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`DESENVOLVIMENTO DE UMA APLICAÇÃO DISTRIBUÍDA`
 
-`SEMESTRE`
+`QUARTO SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Parte indispensável de uma formação acadêmica, o Projeto de Desenvolvimento de uma Aplicação Distribuída, nos permite pesquisar, adquirir novos conhecimentos e aplica-los de uma forma eficaz durante a elaboração do referido projeto. Desta forma, vivenciamos uma experiência única de elaboração de uma aplicação Mobile em conjunto com o Site que nos possibilita um conhecimento prático e teórico. Desde a análise de requisitos, escolha da tecnologia empregada até a concepção prática do software aprendemos de acordo com a demanda do mercado de trabalho e nos formamos preparados para as dificuldades reais enfrentadas ao longo de um desenvolvimento de uma aplicação.
+
+Desta forma, a temática escolhida foi sorteios online, onde podemos trazer de uma maneira simples e funcional, através de ferramentas modernas, a realização de sorteios por cadastro de nome, números e até mesmo por redes sociais dos usuários de uma maneira confiável.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* ALINE GABRIELA TIBURCIO
+* DENISON AMARAL
+* MATEUS VITORINO
+* NATÁLIA GATTI
+* RAFAEL SILVA
 
-## Orientador
+## Leonardo Vilela Cardoso
 
-* Nome completo do professor 1
 
 ## Instruções de utilização
 
