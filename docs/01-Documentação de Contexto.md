@@ -1,46 +1,40 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Parte indispensável de uma formação acadêmica, o Projeto de Desenvolvimento de uma Aplicação Distribuída, nos permite pesquisar, adquirir novos conhecimentos e aplica-los de uma forma eficaz durante a elaboração do referido projeto. Desta forma, vivenciamos uma experiência única de elaboração de uma aplicação Mobile em conjunto com o Site que nos possibilita um conhecimento prático e teórico. Desde a análise de requisitos, escolha da tecnologia empregada até a concepção prática do software aprendemos de acordo com a demanda do mercado de trabalho e nos formamos preparados para as dificuldades reais enfrentadas ao longo de um desenvolvimento de uma aplicação.
+
+Desta forma, a temática escolhida foi sorteios online, onde podemos trazer de uma maneira simples e funcional, através de ferramentas modernas, a realização de sorteios por cadastro de nome, números e até mesmo por redes sociais dos usuários de uma maneira confiável e assim alcançar sucesso.
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+>Usuários enfrentam problemas em login para realizar o sorteio pois não conseguem realizar sorteios de coisas simples sem vincular o e-mail ou a conta do instagram. >Dificuldade de realizar sorteios pois não localizam a conta no instagram ou gmail.
+>Interface complicada de utilizar.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O objetivo do presente projeto é facilitar a realização de qualquer tipo de sorteio, sendo ele para redes sociais, para empresas facilitando o endomarketing ou até mesmo em uma dinâmica pessoal. Tem como objetivo escolher ganhadores de uma forma aleatória ou distribuir prêmios a um grupo específico de participantes.  
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+## Objetivos Específicos
+
+>Desenvolver um software que contenha as principais características e funcionalidades: 
+>Sortear diversas coisas como número, nome e dados.  
+>Definir formas para sorteio 
+>Promover a interação entre determinadas pessoas 
+>Definir um ganhador 
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Atualmente é muito comum as pessoas terem ideias, muitas vezes sensatas ou malucas para aumentar o engajamento em redes sociais. Independente se a ideia for boa ou ruim, muita das vezes o que essas pessoas precisam é de uma ferramenta correta para aumentar esse engajamento e colocar em prática. Desta forma, o presente projeto se justifica diante de uma crescente aplicação do uso de sorteios para que possa ganhar uma gama de seguidores, aumentar o ROI, o engajamento e fidelizar os clientes em redes sociais.   
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+ 
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Um site juntamente com uma aplicação móvel que cumpra os objetivos, vai facilitar e muito a divulgação de uma marca ou de um perfil. Através deste escopo, com o “Good Luck” o usuário vai ter a possibilidade de realizar um sorteio de uma forma simples e eficaz, onde vai contar com uma interface clean sem necessidade de vincular a sua rede social e também vai contar com um algoritmo que sorteia qualquer produto sem um nicho específico.  
+
+ 
+
+O trabalho, por meio do processo busca alcançar uma experiência de acesso que possua: 1. Clareza, 2. Consistência, 3. Conciso 4. Inclusivo. 5. limpo.   
+
+Nesse contexto, o trabalho mostrará como uma ferramenta com proposta minimalista pode completar sem sobrecarregar o usuário final a fim de que se crie um produto que foque na intenção primária de um sorteio, não como concorrente dos demais serviços, mas uma outra opção para pessoas que desejam simples e eficaz. 
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+A indicação principal para público alvo são influenciadores de redes sociais, empresas que buscam aplicar o endomarketing e todos que possam se beneficiar das funcionalidades do aplicativo móvel desenvolvido neste trabalho. Essa aplicação foi desenvolvida com objetivo de auxiliar a realização de sorteios de uma forma simplificada. A faixa etária mínima e máxima não foi definida, pois acreditamos que todos podem, eventualmente, se beneficiar da aplicação.  

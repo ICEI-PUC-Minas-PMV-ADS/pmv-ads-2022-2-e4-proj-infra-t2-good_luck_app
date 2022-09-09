@@ -1,36 +1,37 @@
 
 # Projeto de Interface
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
-
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
-
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Nesta seção, apresentaremos a identidade visual da interface do sistema, por meio do fluxo do usuário e, em seguida, por meio dos wireframes. 
 
 ## Diagrama de Fluxo
 
-O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
+![image](https://user-images.githubusercontent.com/83511889/188626244-b1f3b3ad-f5fa-4387-b48f-a5623afc0baa.png)
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
-
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
-
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+Neste item, serão apresentadas, com maiores detalhes, as telas da aplicação, o que será feito por meio de tópicos, conforme descrito a seguir. 
+
+ >> Tela - Apresentação  
+
+Inicialmente, podemos analisar a construção da proposta para o aplicativo de sorteios randomizados com as cores verdes e branco. Como objetivamos apresentar uma um aspecto mais limpo de interface de usuário, optamos por cores relacionado com a cor verde, branco e azul. O verde representa o trevo de quatro folhas, que está ligado a logomarca que desenhamos, já o branco e o azul para os botões, está ligado a uma simplicidade maior para o aplicativo, proporcionando uma interface mais amigável. 
+
+Assim, segue abaixo a demonstração das paletas de cores com base no que está sendo proposto para a construção do aplicativo. 
+
+>Tela Inicial  
+
+![image](https://user-images.githubusercontent.com/83511889/188626628-16bf4c0e-254e-404a-8c0a-02ad6d805df2.png)
+
+>Tela de Interação (Cadastro de um sorteio) 
+
+Nessa tela, o usuário consegue interagir com o sistema para o cadastro de um sorteio. 
+
+![image](https://user-images.githubusercontent.com/83511889/188626725-e280de24-547b-4252-b5b8-29c1f430d5f7.png)
+
+
+O modal serve de confirmação para o usuário, caso ele queira realmente confirmar a operação de sorteio. 
+
+![image](https://user-images.githubusercontent.com/83511889/188626812-344e2b9e-7213-44e5-92e4-e092025d2801.png)
+
+
