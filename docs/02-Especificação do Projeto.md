@@ -127,7 +127,11 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 Segue abaixo o diagrama de caso de uso do nosso projeto. Ele é usado para descrever graficamente um subconjunto do modelo para simplificar a comunicação.  
 
+Diagrama de caso de uso:
+
 ![image](/docs/img/diagrama_casos_uso.jpg)
+
+Diagrama de classe:
 
 ![image](/docs/img/GoodLuck%20Class%20Diagram.jpg)
 
