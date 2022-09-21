@@ -135,6 +135,16 @@ Diagrama de classe:
 
 ![image](/docs/img/GoodLuck%20Class%20Diagram.jpg)
 
+Tabela de rotas da Api:
+
+|Metodos    |	Urls	        | Ações                          |
+|-----------|-------------------|--------------------------------|
+|POST	    |/api/signup	    |Cria nova conta                 |
+|POST	    |/api/signin	    |Login em uma conta              |
+|GET	    |/api/rafle/all	    |Recupera todos os sorteios      |
+|POST	    |/api/rafle/new	    |Cria um novo sorteio            |
+|GET	    |/api/history	    |Recupera historico de sorteios  |
+
 
 
 
