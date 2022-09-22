@@ -84,7 +84,6 @@ export default function SignIn(props: any) {
                             label="E-mail"
                             name="email"
                             autoComplete="email"
-                            autoFocus
                         />
                         <TextField
                             margin="normal"
