@@ -37,7 +37,7 @@ export default function SignIn(props: any) {
     const data = new FormData(event.currentTarget);
 
 
-      const uri2 = 'http://localhost:8080/auth';
+      const uri2 = 'http://localhost:8080/users/auth';
 
       const postUser = async () => {
         try {

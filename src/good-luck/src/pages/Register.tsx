@@ -34,12 +34,42 @@ export default function SignIn(props: any) {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-        console.log({
-            email: data.get('email'),
-            password: data.get('password'),
-        });
+
+        const uri2 = 'http://localhost:8080/user/create';
+
+      const postUser = async () => {
+        try {
+          const resp = await fetch(uri2, {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ username: data.get('email'), password: data.get('password'), name: data.get('name') }),
+          })
+          if (!resp.ok) {
+            throw new Error(`Error! status: ${resp.status}`);
+          }
+          const result = await resp.json();
+          if(result.message == 'Incorrect Username and/or Password!'){
+            console.log('Usuário não validado')
+            return false
+          }else{
+            console.log('Usuário validado')
+            return handleClickHome()
+          }
+        } catch (err) {
+          console.log(err);
+        }
+      }
+       postUser()
 
     };
+
+
+
+
+    
     const navigate = useNavigate();
     
     function handleClickHome() {
@@ -70,10 +100,10 @@ export default function SignIn(props: any) {
                             margin="normal"
                             required
                             fullWidth
-                            id="nome"
+                            id="name"
                             label="Nome"
-                            name="nome"
-                            autoComplete="nome"
+                            name="name"
+                            autoComplete="name"
                             autoFocus
                         />
                         <TextField
@@ -109,7 +139,7 @@ export default function SignIn(props: any) {
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            onClick={handleClickHome}
+                            
 
                         >
                             Cadastrar
