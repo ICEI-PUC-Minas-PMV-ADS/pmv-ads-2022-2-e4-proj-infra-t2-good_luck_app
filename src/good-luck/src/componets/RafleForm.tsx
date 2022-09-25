@@ -27,11 +27,13 @@ export default function MultilineTextFields() {
                 />
 
                 <TextField
-                    id="outlined-textarea"
+                    id="outlined-number"
                     label="Participantes"
+                    type="number"
                     placeholder="Quant."
-                    multiline
-
+                    InputLabelProps={{
+                        shrink: true,
+                    }}
                 />
 
                 <TextField
