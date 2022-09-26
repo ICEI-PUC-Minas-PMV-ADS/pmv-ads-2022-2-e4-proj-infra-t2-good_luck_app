@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -12,7 +12,6 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from "react-router-dom";
-
 
 
 function Copyright(props: any) {
@@ -53,7 +52,7 @@ export default function SignIn(props: any) {
             throw new Error(`Error! status: ${resp.status}`);
           }
           const result = await resp.json();
-          if(result.message == 'Incorrect Username and/or Password!'){
+          if(result.message === 'Incorrect Username and/or Password!'){
             console.log('Usuário não validado')
             return false
           }else{

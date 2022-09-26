@@ -117,7 +117,7 @@ app.post('/user/create', function (request, response) {
 			} else {
 				db.query(`INSERT into user ( idUser, name, email, password ) VALUES (?,?,?,?)`, [userId, name, username, password], function (error, results, fields) {
 					response.send()
-		
+
 				});
 			}
 			response.end();
@@ -127,6 +127,35 @@ app.post('/user/create', function (request, response) {
 		response.end();
 	}
 });
+
+////SORTEIO
+
+app.post('/raffle/create', function (request, response) {
+	// Capture the input fields
+	let idRaffle = request.body.idRaffle
+	let RaffleName = request.body.nomeSorteio;
+	let RaffleParticipants = request.body.participantes;
+	let RaffleUserDrawn = ''
+	let date = request.body.data;
+	let description = request.body.description
+	let User_idUser = 1
+
+	// Execute SQL query that'll select the account from the database based on the specified username and password
+	db.query(`INSERT into raffle (idRaffle, RaffleName, RaffleParticipants, RaffleUserDrawn, date, description, User_idUser ) VALUES (?,?,?,?,?,?,?)`, [idRaffle, RaffleName, RaffleParticipants, RaffleUserDrawn, date, description, User_idUser], function (error, results, fields) {
+		// If there is an issue with the query, output the error
+		if (error) throw error;
+		// If the account exists
+		if (results.length > 0) {
+			response.statusCode(200);
+		} else {
+			response.send({ message: 'Usuario ja existente' });
+		}
+		response.end();
+	});
+}
+);
+
+
 
 
 const PORT = process.env.PORT || 8080;
