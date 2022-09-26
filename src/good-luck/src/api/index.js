@@ -108,7 +108,7 @@ app.post('/user/create', function (request, response) {
 		// Execute SQL query that'll select the account from the database based on the specified username and password
 		db.query(`Select email from user WHERE email=?`, [username], function (error, results, fields) {
 			// If there is an issue with the query, output the error
-			if (error) throw error;
+			//if (error) throw error;
 			// If the account exists
 			if (results.length > 0) {
 				response.status(400).json({
@@ -116,7 +116,8 @@ app.post('/user/create', function (request, response) {
 				})
 			} else {
 				db.query(`INSERT into user ( idUser, name, email, password ) VALUES (?,?,?,?)`, [userId, name, username, password], function (error, results, fields) {
-					response.status(200)
+					response.send()
+		
 				});
 			}
 			response.end();

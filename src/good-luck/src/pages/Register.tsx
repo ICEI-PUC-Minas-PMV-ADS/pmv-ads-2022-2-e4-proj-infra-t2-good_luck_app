@@ -6,14 +6,11 @@ import TextField from '@mui/material/TextField';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useNavigate } from "react-router-dom";
-import App from '../App'
 
 function Copyright(props: any) {
     return (
@@ -34,45 +31,25 @@ export default function SignIn(props: any) {
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);
-
         const uri2 = 'http://localhost:8080/user/create';
-
-      const postUser = async () => {
-        try {
-          const resp = await fetch(uri2, {
-            method: 'POST',
-            headers: {
-              Accept: 'application/json',
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ username: data.get('email'), password: data.get('password'), name: data.get('name') }),
-          })
-          if (!resp.ok) {
-            throw new Error(`Error! status: ${resp.status}`);
-          }
-          const result = await resp.json();
-          console.log(result)
-          if(result.title == 'Ops...'){
-            console.log('Usuário não validado')
-            return false
-          }else{
-            console.log('Usuário validado')
-            return handleClickHome()
-          }
-        } catch (err) {
-          console.log(err);
+        const postUser = async () => {
+            const resp = await fetch(uri2, {
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json',
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ username: data.get('email'), password: data.get('password'), name: data.get('name') }),
+            })
+            if (resp.ok) {
+                return handleClickHome()
+            }
         }
-      }
-       postUser()
-
+        postUser()
     };
 
-
-
-
-    
     const navigate = useNavigate();
-    
+
     function handleClickHome() {
         props.toggleShow(true)
         navigate("/home");
@@ -97,7 +74,7 @@ export default function SignIn(props: any) {
                         Good Luck
                     </Typography>
                     <Box component="form" onSubmit={handleSubmit} noValidate sx={{ mt: 1 }}>
-                    <TextField
+                        <TextField
                             margin="normal"
                             required
                             fullWidth
@@ -140,7 +117,7 @@ export default function SignIn(props: any) {
                             fullWidth
                             variant="contained"
                             sx={{ mt: 3, mb: 2 }}
-                            
+
 
                         >
                             Cadastrar
