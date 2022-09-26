@@ -1,4 +1,5 @@
-import * as React from 'react';
+import * as  React from 'react';
+import { useState } from 'react'
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -30,6 +31,8 @@ export default function SignIn(props: any) {
             })
             if (resp.ok) {
                 return handleClickHome()
+            } else{
+                return setRenderResult(true)
             }
         }
         postUser()
@@ -41,6 +44,8 @@ export default function SignIn(props: any) {
         props.toggleShow(true)
         navigate("/home");
     }
+
+    const [renderResult, setRenderResult] = useState(false)
 
     return (
         <ThemeProvider theme={theme}>
@@ -106,6 +111,7 @@ export default function SignIn(props: any) {
                             sx={{ mt: 3, mb: 2 }}>
                             Cadastrar
                         </Button>
+                        {renderResult == true ? <div>Usuário ja cadastrado!</div> : null }
                     </Box>
                 </Box>
             </Container>
