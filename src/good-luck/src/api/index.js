@@ -4,15 +4,15 @@ const cors = require('cors');
 
 const app = express();
 const db = mysql.createPool({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'goodluck',
-    multipleStatements: true
+	host: 'localhost',
+	user: 'root',
+	password: '',
+	database: 'goodluck',
+	multipleStatements: true
 });
 
 var corsOptions = {
-    origin: "http://localhost:3000"
+	origin: "http://localhost:3000"
 };
 
 app.use(cors(corsOptions));
@@ -25,25 +25,25 @@ app.use(express.urlencoded({ extended: true }));
 
 // simple route
 app.get("/", (req, res) => {
-    res.json({ message: "Welcome to goodluck application." });
+	res.json({ message: "Welcome to goodluck application." });
 });
 
 app.get('/users', function (req, res) {
-    db.query('SELECT * FROM user ORDER BY idUser DESC', function (error, results, fields) {
-        if (error) throw error;
-        res.send(results)
-    });
+	db.query('SELECT * FROM user ORDER BY idUser DESC', function (error, results, fields) {
+		if (error) throw error;
+		res.send(results)
+	});
 });
 
 
-app.post('/users/auth', function(request, response) {
+app.post('/users/auth', function (request, response) {
 	// Capture the input fields
 	let username = request.body.username;
 	let password = request.body.password;
 	// Ensure the input fields exists and are not empty
 	if (username && password) {
 		// Execute SQL query that'll select the account from the database based on the specified username and password
-		db.query('SELECT * FROM user WHERE email = ? AND password = ?', [username, password], function(error, results, fields) {
+		db.query('SELECT * FROM user WHERE email = ? AND password = ?', [username, password], function (error, results, fields) {
 			// If there is an issue with the query, output the error
 			if (error) throw error;
 			// If the account exists
@@ -54,8 +54,8 @@ app.post('/users/auth', function(request, response) {
 				// Redirect to home page
 				response.redirect("/users");
 			} else {
-				response.send({message:'Incorrect Username and/or Password!'});
-			}			
+				response.send({ message: 'Incorrect Username and/or Password!' });
+			}
 			response.end();
 		});
 	} else {
@@ -65,7 +65,38 @@ app.post('/users/auth', function(request, response) {
 });
 
 
-app.post('/user/create', function(request, response) {
+// app.post('/user/create', function(request, response) {
+// 	// Capture the input fields
+// 	let name = request.body.name;
+// 	let username = request.body.username;
+// 	let password = request.body.password;
+// 	let userId = request.body.userId;
+
+// 	// Ensure the input fields exists and are not empty
+// 	if (username && password) {
+// 		// Execute SQL query that'll select the account from the database based on the specified username and password
+// 		db.query(`INSERT into user ( idUser, name, email, password ) VALUES (?,?,?,?)`, [userId, name, username, password], function(error, results, fields) {
+// 			// If there is an issue with the query, output the error
+// 			if (error) throw error;
+// 			// If the account exists
+// 			if (results.length > 0) {
+// 				// Authenticate the user
+// 				// request.session.loggedin = true;
+// 				// request.session.username = username;
+// 				// Redirect to home page
+// 				response.redirect("/login");
+// 			} else {
+// 				response.send({message:'Usuario ja existente'});
+// 			}			
+// 			response.end();
+// 		});
+// 	} else {
+// 		response.send('Entre com usuario e senha.');
+// 		response.end();
+// 	}
+// });
+
+app.post('/user/create', function (request, response) {
 	// Capture the input fields
 	let name = request.body.name;
 	let username = request.body.username;
@@ -75,19 +106,19 @@ app.post('/user/create', function(request, response) {
 	// Ensure the input fields exists and are not empty
 	if (username && password) {
 		// Execute SQL query that'll select the account from the database based on the specified username and password
-		db.query(`INSERT into user ( idUser, name, email, password ) VALUES (?,?,?,?)`, [userId, name, username, password], function(error, results, fields) {
+		db.query(`Select email from user WHERE email=?`, [username], function (error, results, fields) {
 			// If there is an issue with the query, output the error
 			if (error) throw error;
 			// If the account exists
 			if (results.length > 0) {
-				// Authenticate the user
-				// request.session.loggedin = true;
-				// request.session.username = username;
-				// Redirect to home page
-				response.redirect("/login");
+				response.status(400).json({
+					title: 'Ops...'
+				})
 			} else {
-				response.send({message:'Usuario ja existente'});
-			}			
+				db.query(`INSERT into user ( idUser, name, email, password ) VALUES (?,?,?,?)`, [userId, name, username, password], function (error, results, fields) {
+					response.status(200)
+				});
+			}
 			response.end();
 		});
 	} else {
@@ -99,5 +130,5 @@ app.post('/user/create', function(request, response) {
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}.`);
+	console.log(`Server is running on port ${PORT}.`);
 });

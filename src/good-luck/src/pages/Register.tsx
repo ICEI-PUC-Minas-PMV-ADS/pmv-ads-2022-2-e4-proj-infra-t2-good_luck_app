@@ -51,7 +51,8 @@ export default function SignIn(props: any) {
             throw new Error(`Error! status: ${resp.status}`);
           }
           const result = await resp.json();
-          if(result.message == 'Incorrect Username and/or Password!'){
+          console.log(result)
+          if(result.title == 'Ops...'){
             console.log('Usuário não validado')
             return false
           }else{
