@@ -111,7 +111,7 @@ export default function SignIn(props: any) {
                             sx={{ mt: 3, mb: 2 }}>
                             Cadastrar
                         </Button>
-                        {renderResult == true ? <div>Usuário ja cadastrado!</div> : null }
+                        {renderResult == true ? <div>Usuário ja cadastrado. Tente outro e-mail!</div>: null }
                     </Box>
                 </Box>
             </Container>

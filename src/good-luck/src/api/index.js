@@ -155,6 +155,22 @@ app.post('/raffle/create', function (request, response) {
 }
 );
 
+app.get('/raffle/all', function (request, response) {
+
+	// Execute SQL query that'll select the account from the database based on the specified username and password
+	db.query(`SELECT * FROM raffle ORDER BY idRaffle DESC`, function (error, results, fields) {
+		// If there is an issue with the query, output the error
+		if (error) throw error;
+		// If the account exists
+		if (results.length > 0) {
+			response.send(results)
+		} else {
+			response.send({ message: 'Não existe dados' });
+		}
+		response.end();
+	});
+}
+);
 
 
 
