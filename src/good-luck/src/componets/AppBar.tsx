@@ -72,7 +72,9 @@ const ResponsiveAppBar = (props: any) => {
                         }}
                         onClick={handleClickHome}
                     >
-                        GOOD LUCK
+                        <Button sx={{ my: 2, color: 'inherit', display: 'block', fontWeight: 700 }}>
+                            GOOD LUCK
+                        </Button>
                     </Typography>
 
                     {/*INICIO menu responsivo*/}

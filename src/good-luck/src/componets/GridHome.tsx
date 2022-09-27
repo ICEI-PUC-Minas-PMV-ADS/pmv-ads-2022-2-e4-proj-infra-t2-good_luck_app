@@ -8,7 +8,6 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
 import { useState, useEffect } from "react";
 
 type resultProps = {
@@ -43,9 +42,12 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     },
 }));
 
-
+function sortear(){
+    console.log()
+}
 
 export default function CustomizedTables() {
+    
 
     const [result, setResult] = useState<resultProps[]>([]);
 
@@ -85,7 +87,7 @@ export default function CustomizedTables() {
                                 <StyledTableCell align="center">{row.RaffleUserDrawn}</StyledTableCell>
                                 <StyledTableCell align="center">{row.date}</StyledTableCell>
                                 <StyledTableCell align="center">{row.description}</StyledTableCell>
-                                <StyledTableCell align="center"><Button variant="outlined" >Ações</Button>
+                                <StyledTableCell align="center"><Button variant="outlined" color="error" onClick={sortear} >Sortear</Button>
                                 </StyledTableCell>
                             </StyledTableRow>
                         ))}
