@@ -48,9 +48,8 @@ export default function CustomizedTables() {
 
   const [result, setResult] = useState<resultProps[]>([]);
 
-  function downloadRaffle(){
+  function downloadRaffle(...data: any){
     const element = document.createElement("a");
-    var data = result 
     var teste = JSON.stringify(data)
     const file = new Blob([teste], {type: 'text/plain'});
     element.href = URL.createObjectURL(file);
@@ -100,7 +99,7 @@ export default function CustomizedTables() {
                   aria-label="account of current user"
                   aria-controls="menu-appbar"
                   aria-haspopup="true"
-                  onClick={downloadRaffle}
+                  onClick={()=>downloadRaffle(row.idRaffle, row.RaffleName, row.RaffleParticipants, row.RaffleUserDrawn, row.date, row.description)}
                   color="inherit"
                 >
                   <DownloadIcon />

@@ -10,7 +10,7 @@ import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 
 export default function MultilineTextFields(props: any) {
     const [value, setValue] = React.useState<Dayjs | null>(null);
-    console.log(value)
+
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         const data = new FormData(event.currentTarget);

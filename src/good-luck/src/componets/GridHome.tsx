@@ -42,8 +42,8 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     },
 }));
 
-function sortear(){
-    console.log()
+function sortear(idRaffle: any){
+     console.log(idRaffle)
 }
 
 export default function CustomizedTables() {
@@ -87,7 +87,7 @@ export default function CustomizedTables() {
                                 <StyledTableCell align="center">{row.RaffleUserDrawn}</StyledTableCell>
                                 <StyledTableCell align="center">{row.date}</StyledTableCell>
                                 <StyledTableCell align="center">{row.description}</StyledTableCell>
-                                <StyledTableCell align="center"><Button variant="outlined" color="error" onClick={sortear} >Sortear</Button>
+                                <StyledTableCell align="center"><Button variant="outlined" color="error" onClick={() => sortear(row.idRaffle)} >Sortear</Button>
                                 </StyledTableCell>
                             </StyledTableRow>
                         ))}
