@@ -1,4 +1,4 @@
-import * as React from 'react';
+
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -43,25 +43,22 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 
+
 export default function CustomizedTables(idRaffle: any, RaffleParticipants: any) {
 
     const [result, setResult] = useState<resultProps[]>([]);
-
     useEffect(() => {
+            apiGetRaffles()
+    }, [])
 
-        const apiGetRaffles = async () => {
-            const data = await fetch("http://localhost:8080/raffle/all", {
-                method: "GET"
-            });
-            const jsonData = await data.json();
-            setResult(jsonData);
-        };
-        if(result){
-            apiGetRaffles();
-        }
-        apiGetRaffles();
-    }, [result]);
-    
+    const apiGetRaffles = async () => {
+        const data = await fetch("http://localhost:8080/raffle/all", {
+            method: "GET"
+        });
+        const jsonData = await data.json();
+        setResult(jsonData);
+    };
+
     return (
         <div className="Home">
 

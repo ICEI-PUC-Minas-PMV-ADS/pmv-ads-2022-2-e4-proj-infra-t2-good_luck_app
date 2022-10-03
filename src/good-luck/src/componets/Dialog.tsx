@@ -10,6 +10,7 @@ import { useState } from "react";
 export default function AlertDialog(args: any) {
   const [open, setOpen] = useState(false);
 
+
   //Sorteio
   const [sorteio, setSorteio] = useState(0);
   const sortear =  () => {

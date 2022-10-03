@@ -35,6 +35,13 @@ app.get('/users', function (req, res) {
 	});
 });
 
+app.get('/users/profile/:id?', function (req, res) {
+	db.query('SELECT * FROM user where id=? ',[id], function (error, results, fields) {
+		if (error) throw error;
+		res.send(results)
+	});
+});
+
 
 app.post('/users/auth', function (request, response) {
 	// Capture the input fields
