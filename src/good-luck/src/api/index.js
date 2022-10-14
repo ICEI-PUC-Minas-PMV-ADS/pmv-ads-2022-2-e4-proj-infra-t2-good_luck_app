@@ -2,6 +2,9 @@ const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 
+const swaggerUi = require('swagger-ui-express')
+const swaggerFile = require('./swagger_output.json')
+
 const app = express();
 const db = mysql.createPool({
 	host: 'localhost',
@@ -174,36 +177,6 @@ app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}.`);
 });
 
+app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
-
-
-// app.post('/user/create', function(request, response) {
-// 	// Capture the input fields
-// 	let name = request.body.name;
-// 	let username = request.body.username;
-// 	let password = request.body.password;
-// 	let userId = request.body.userId;
-
-// 	// Ensure the input fields exists and are not empty
-// 	if (username && password) {
-// 		// Execute SQL query that'll select the account from the database based on the specified username and password
-// 		db.query(`INSERT into user ( idUser, name, email, password ) VALUES (?,?,?,?)`, [userId, name, username, password], function(error, results, fields) {
-// 			// If there is an issue with the query, output the error
-// 			if (error) throw error;
-// 			// If the account exists
-// 			if (results.length > 0) {
-// 				// Authenticate the user
-// 				// request.session.loggedin = true;
-// 				// request.session.username = username;
-// 				// Redirect to home page
-// 				response.redirect("/login");
-// 			} else {
-// 				response.send({message:'Usuario ja existente'});
-// 			}			
-// 			response.end();
-// 		});
-// 	} else {
-// 		response.send('Entre com usuario e senha.');
-// 		response.end();
-// 	}
-// });
+require('./endpoints')(app)
