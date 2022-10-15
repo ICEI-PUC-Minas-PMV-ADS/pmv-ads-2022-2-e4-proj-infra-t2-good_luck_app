@@ -137,16 +137,19 @@ Diagrama de classe:
 
 Tabela de rotas da Api:
 
-|Metodos    |	Urls	        | Ações                          |
-|-----------|-------------------|--------------------------------|
-|POST	    |/api/signup	    |Cria nova conta                 |
-|POST	    |/api/signin	    |Login em uma conta              |
-|GET	    |/api/rafle/all	    |Recupera todos os sorteios      |
-|POST	    |/api/rafle/new	    |Cria um novo sorteio            |
-|GET	    |/api/history	    |Recupera historico de sorteios  |
+|Metodos    |	Urls	            | Ações                          |
+|-----------|-----------------------|--------------------------------|
+|GET	    |/api/      	        |Check Health da API             |
+|GET	    |/api/users 	        |Recupera dados do usuário       |
+|GET	    |/api/profile/email	    |Visualiza o profile do usuário  |
+|POST	    |/api/user/auth 	    |Autentica o usuário             |
+|POST	    |/api/user/create	    |Cria um novo usuário            |
+|POST	    |/api/rafle/create	    |Cria um novo sorteio            |
+|GET	    |/api/rafle/all 	    |Visualiza todos os sorteios     |
+|PUT	    |/api/raffle/raffle/id  |Atualiza um sorteio pelo ID     |
 
 
-
+![image](/docs/img/Swagger.jpg)
 
 # Matriz de Rastreabilidade
 

@@ -76,14 +76,14 @@ As ferramentas empregadas no projeto seguem listadas abaixo:
 
 Editor de código: O editor escolhido foi o Visual Studio 2022 pela integração com o Framework ASP.NET e outras ferramentas utilizadas no projeto como Github e SQL. 
 
-Sistema Gerador de Banco de Dados: 
+Sistema Gerador de Banco de Dados: Mysql
 
 Ferramentas de Comunicação: Whatsapp e Microsoft Teams, visto a facilidade em comunicação e a possibilidade de reuniões em vídeo. 
 
 Ferramentas de desenho: Utilizamos o Lucidchart pelo fato de criação de wireframes interativos e mais detalhados. 
 
-Ferramenta de Elaboração de Diagrama: 
+Ferramenta de Elaboração de Diagrama: Bizagi, Canva e LucidiChart
 
 Ferramentas de Controle de Versão: Github 
 
-Ferramenta de Gerenciamento de projeto: PostgreSQL 
+Ferramenta de Gerenciamento de projeto: Trello/GitHub
