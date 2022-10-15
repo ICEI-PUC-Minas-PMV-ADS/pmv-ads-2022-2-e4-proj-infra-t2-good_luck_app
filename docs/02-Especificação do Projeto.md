@@ -149,7 +149,7 @@ Tabela de rotas da Api:
 |PUT	    |/api/raffle/raffle/id  |Atualiza um sorteio pelo ID     |
 
 
-![image](/docs/img/Swagger.jpg)
+![image](/docs/img/Swagger.JPG)
 
 # Matriz de Rastreabilidade
 
