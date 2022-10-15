@@ -19,6 +19,11 @@ A solução implementada conta com os seguintes módulos:
 ºHospedagem  -  Local  na  Internet  onde  as  páginas  são  mantidas  e  acessadas  pelo navegador.  
 
  
+## Esquema Relacional
+
+O desenvolvimento do aplicativo, assim como a ideia inicial, tem como propósito a realização de sorteios. Com isso em mente, podemos analisar o diagrama a seguir onde, uma pessoa pode logar no sistema e realizar a criação de um usuário. Um usuário pode realizar muitos sorteios, assim como um usuário tem acesso ao historico dos sorteios cadastrados na entidade da tabela Raffle. Sendo considerado um relacionamento é de 1 para N.
+
+![image](/docs/img/DER.png)
 
 
 ## Tecnologias Utilizadas
@@ -36,3 +41,4 @@ Após o processo de subida dos arquivos ao repositório, voltamos novamente ao H
 ## Qualidade de Software
 
 A principal norma técnica que podemos citar para a construção do nosso aplicativo, é a PORTABILIDADE. Essa característica refere-se ao software em ser transferido de um ambiente para o outro. Como se trata de um aplicativo para dispositivos moveis, essa seria a principal característica. Uma segunda característica que nosso aplicativo visa atender é a USABILIDADE, onde é a capacidade ou esforço de usar o software. Podemos elencar como sub-características a atratividade, onde foi fundamental a escolha da paleta de cores e a simplicidade para o manuseio das telas representado pela operatividade. A funcionalidade, refere-se a existência de um conjunto de funções que satisfaz a necessidade estabelecidas e suas propriedades especificas. Com isso em mente, a funcionalidade seguirá uma linha com base na licitação dos requisitos, e caso haja a necessidade de mudança de algum requisito tanto funcional, quanto não-funcional, também será tomado como base esse novo requisito, para uma acurácia e adequação da funcionalidade do aplicativo. 
+
