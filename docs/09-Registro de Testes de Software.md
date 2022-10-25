@@ -1,12 +1,61 @@
 # Registro de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
+|Caso de Teste            | CT-01 – Realizar login na tela inicial  |
+|-------------------------|-----------------------------------------|
+|Requisitos Associados    | RF-02                                   |
+|Objetivo do teste        |O usuário deve poder realizar o login no aplicativo |
+|Passos                   | 1) Acessar o aplicativo 2) Clicar no botão LOGIN 3) Visualizar a tela de Login |
+|Critérios de Êxito       |A página deve apresentar uma mensagem: “A tela inicial da aplicação” |
+|Resultado                | Passos 1, 2, 3  realizados com sucesso.  |
+![Caso de Teste](img/registrodeteste/ct-01.JPG)
+![Caso de Teste](img/registrodeteste/ct-01-1.JPG)
 
-Relatório com as evidências dos testes de software realizados no sistema pela equipe, baseado em um plano de testes pré-definido.
 
-## Avaliação
+|Caso de Teste            | CT-02 – Realizar cadastro na tela inicial |
+|-------------------------|-----------------------------------------|
+|Requisitos Associados    | RF-01                                   |
+|Objetivo do teste        |O usuário deve poder realizar um cadastro e login no aplicativo |
+|Passos                   | 1) Acessar o aplicativo 2) Clicar no botão CADASTRAR 3) Visualizar a tela de cadastro |
+|Critérios de Êxito       |A página deve apresentar uma mensagem: “Usuário cadastrado com sucesso” |
+|Resultado                | Passos 1, 2, 3  realizados com sucesso.  |
+![Caso de Teste](img/registrodeteste/ct-02.JPG)
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
 
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+|Caso de Teste            | CT-03 – Realizar cadastro de sorteio |
+|-------------------------|-----------------------------------------|
+|Requisitos Associados    | RF-03                                   |
+|Objetivo do teste        |O usuário deve poder realizar um cadastro de um sorteio |
+|Passos                   | 1) Acessar o aplicativo 2) Clicar no botão SORTEIOS 3) Visualizar a tela de sorteios |
+|Critérios de Êxito       |A página deve apresentar uma mensagem: “Sorteio cadastrado” |
+|Resultado                | Passos 1, 2, 3  realizados com sucesso.  |
+![Caso de Teste](img/registrodeteste/ct-03.JPG)
+![Caso de Teste](img/registrodeteste/ct-03-1.JPG)
+![Caso de Teste](img/registrodeteste/ct-03-2.JPG)
+
+|Caso de Teste            | CT-04 – Tela de gahnadores |
+|-------------------------|-----------------------------------------|
+|Requisitos Associados    | RF-04                                   |
+|Objetivo do teste        |O usuário deve poder visualizar os ganhadores dos sorteios |
+|Passos                   | 1) Acessar o aplicativo 2) Clicar no botão HOME 3) Visualizar a tela de HOME |
+|Critérios de Êxito       |A página deve apresentar todos os sorteios e seus respectivos numeros sorteados |
+|Resultado                | Passos 1, 2, 3  realizados com sucesso.  |
+![Caso de Teste](img/registrodeteste/ct-04.JPG)
+![Caso de Teste](img/registrodeteste/ct-04-1.JPG)
+![Caso de Teste](img/registrodeteste/ct-04-2.JPG)
+
+|Caso de Teste            | CT-05 – Visualizar historico de ganhadores |
+|-------------------------|-----------------------------------------|
+|Requisitos Associados    | RF-05                                   |
+|Objetivo do teste        |O usuário deve poder visualizar todos os historicos de ganhadores |
+|Passos                   | 1) Acessar o aplicativo 2) Clicar no botão HISTORICO 3) Visualizar a tela de historico |
+|Critérios de Êxito       |A página deve apresentar o historico de todos os sorteios realizados |
+![Caso de Teste](img/registrodeteste/ct-05.JPG)
+
+|Caso de Teste            | CT-06 – Download de arquivo de histórico de ganhadores |
+|-------------------------|-----------------------------------------|
+|Requisitos Associados    | RF-05                                   |
+|Objetivo do teste        |O usuário deve poder visualizar todos os historicos de ganhadores |
+|Passos                   | 1) Acessar o aplicativo 2) Clicar no botão HISTORICO 3) Visualizar a tela de historico 4) clicar em download|
+|Critérios de Êxito       |O documento deve apresentar o historico de todos os sorteios realizados |
+![Caso de Teste](img/registrodeteste/ct-06.JPG)
+![Caso de Teste](img/registrodeteste/ct-06-1.JPG)
