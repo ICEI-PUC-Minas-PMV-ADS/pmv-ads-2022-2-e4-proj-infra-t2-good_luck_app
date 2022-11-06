@@ -15,7 +15,7 @@ Desta forma, a temática escolhida foi sorteios online, onde podemos trazer de u
 * ALINE GABRIELA TIBURCIO
 * ALFREDO LATORRE NETO
 * DENISON AMARAL
-* MATEUS VITORINO
+* MATEUS VITORINO GUIMARÃES
 * NATÁLIA GATTI
 * RAFAEL SILVA
 
