@@ -13,6 +13,7 @@ Desta forma, a temática escolhida foi sorteios online, onde podemos trazer de u
 ## Integrantes
 
 * ALINE GABRIELA TIBURCIO
+* ALFREDO LATORRE NETO
 * DENISON AMARAL
 * MATEUS VITORINO
 * NATÁLIA GATTI
