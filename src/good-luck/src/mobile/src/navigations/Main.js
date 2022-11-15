@@ -3,7 +3,8 @@ import { View, Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
-import Login from '../screens/Login'
+import Login from '../screens/Logins'
+import Index from '../screens/Index'
 
 const Stack = createNativeStackNavigator();
 
@@ -12,6 +13,7 @@ function App() {
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Welcome">
         <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="Index" component={Index} />
       </Stack.Navigator>
     </NavigationContainer>
   );

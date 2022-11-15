@@ -7,9 +7,8 @@ import {
   ImageBackground,
   Button,
   Text,
-  TextInput
+  TextInput,
 } from 'react-native';
-
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -18,48 +17,57 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 const Tab = createBottomTabNavigator();
 
 export default function (props) {
-
-const [email, setEmail] = useState('')
-const [senha, setSenha] = useState('')
-const [data, setData] = useState('')
+  const [email, setEmail] = useState('');
+  const [senha, setSenha] = useState('');
+  const [data, setData] = useState('');
 
   const simpleAlertHandler = () => {
     alert('USUARIO INVALIDO');
   };
 
-const getUser = async () => {
-    try {
-      const response = await fetch(
-        `http://localhost:8080/users/auth`
-        
-      );
-      const jsonObj = await response.json();
-      setData(jsonObj);
-      const emailMap = data.map((dado) =>{
-      if (dado.email == email ){
-        props.navigation.navigate('Index')
-      }
-      else {
-        simpleAlertHandler()
-      }
+  const getUser = async () => {
+    props.navigation.navigate('Index');
+    // try {
+    //   const response = await fetch(
+    //     `http://localhost:8080/users/auth`
 
-      });
-    
-    } catch (error) {
-      console.error(error);
-    } 
-    
+    //   );
+    //   const jsonObj = await response.json();
+    //   setData(jsonObj);
+    //   const emailMap = data.map((dado) =>{
+    //   if (dado.email == email ){
+    //     props.navigation.navigate('Index')
+    //   }
+    //   else {
+    //     simpleAlertHandler()
+    //   }
+
+    //   });
+
+    // } catch (error) {
+    //   console.error(error);
+    // }
   };
-
 
   return (
     <View style={styles.container}>
-      <Image style={styles.stretch} resizeMode={'contain'}  source={require('../../assets/logo.png')} />
-      <TextInput style={styles.input} placeholder="Email" onChangeText={(text) => setEmail(text)} />
-      <TextInput style={styles.input}  secureTextEntry={true} placeholder="Senha" onChangeText={(text) => setSenha(text)} />
-      <TouchableOpacity
-        style={styles.button}
-        onPress={() => getUser()}>
+      <Image
+        style={styles.stretch}
+        resizeMode={'contain'}
+        source={require('../../assets/logo.png')}
+      />
+      <TextInput
+        style={styles.input}
+        placeholder="Email"
+        onChangeText={(text) => setEmail(text)}
+      />
+      <TextInput
+        style={styles.input}
+        secureTextEntry={true}
+        placeholder="Senha"
+        onChangeText={(text) => setSenha(text)}
+      />
+      <TouchableOpacity style={styles.button} onPress={() => getUser()}>
         <Text style={styles.text}>ENTRAR</Text>
       </TouchableOpacity>
     </View>
@@ -77,8 +85,6 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft:'10%',
-
   },
   button: {
     alignItems: 'center',
@@ -97,14 +103,14 @@ const styles = StyleSheet.create({
     letterSpacing: 0.25,
     color: 'white',
   },
-   input: {
+  input: {
     backgroundColor: '#FFF',
-    marginTop:15,
+    marginTop: 15,
     marginBottom: 8,
-    height:50,
-    paddingLeft:10,
-    borderBottomWidth:1,
-    borderBottomColor:'black',
-    fontSize:20
+    height: 50,
+    paddingLeft: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: 'black',
+    fontSize: 20,
   },
 });
