@@ -8,6 +8,6 @@ import {
 } from 'react-native';
 
 const Profile = ({ navigation }) => {
-  return <div></div>;
+  return <View></View>;
 };
 export default Profile;

@@ -7,6 +7,7 @@ import {
   Text,
   FlatList,
   ScrollView,
+  Image,
 } from 'react-native';
 import { Icon } from 'react-native-elements';
 
@@ -27,8 +28,8 @@ const History = ({ navigation }) => {
     setResult(jsonData);
   };
   return (
-    <div>
-      <ScrollView style={{ marginBottom: 200 }}>
+    <View>
+      <ScrollView >
         <FlatList
           data={result}
           keyExtractor={({ messageId }, index) => messageId}
@@ -39,20 +40,31 @@ const History = ({ navigation }) => {
 
                 <View style={styles.content}>
                   <View style={styles.contentHeader}>
-                    <Text style={styles.name}>Nº {item.idRaffle}</Text>
+                    <Text style={styles.name}>Nº Sorteado: {item.RaffleUserDrawn}</Text>
                     <Text style={styles.time}>10:58 am</Text>
                   </View>
 
                   <View style={styles.contentFooter}>
                     <Text>Nome: {item.RaffleName}</Text>
+                    <TouchableOpacity
+                      style={styles.contentFooterbtn}
+                      onPress={() => {}}>
+                      <Text>SORTEAR</Text>
+
+                      <Image
+                        style={styles.image}
+                        resizeMode={'contain'}
+                        source={require('../../assets/logo.png')}
+                      />
+                    </TouchableOpacity>
                   </View>
 
                   <View style={styles.contentFooter}>
-                     <Text>Participantes: {item.RaffleParticipants}</Text>
+                    <Text>Participantes: {item.RaffleParticipants}</Text>
                   </View>
 
                   <View style={styles.contentFooter}>
-                     <Text>Data: {item.date}</Text>
+                    <Text>Data: {item.date}</Text>
                   </View>
 
                   <View style={styles.contentFooter}>
@@ -61,14 +73,13 @@ const History = ({ navigation }) => {
                       <Icon name="delete" color="#517fa4" />
                     </TouchableOpacity>
                   </View>
-
                 </View>
               </View>
             </View>
           )}
         />
       </ScrollView>
-    </div>
+    </View>
   );
 };
 
@@ -106,6 +117,10 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginBottom: 6,
   },
+  contentFooterbtn: {
+    flexDirection: 'row',
+    justifyContent: 'flex-end',
+  },
   icon: {
     width: 45,
     height: 45,
@@ -120,6 +135,12 @@ const styles = StyleSheet.create({
   name: {
     fontSize: 16,
     fontWeight: 'bold',
+  },
+  image: {
+    flex: 1,
+    width: 20,
+    height: 20,
+    resizeMode: 'contain',
   },
 });
 
