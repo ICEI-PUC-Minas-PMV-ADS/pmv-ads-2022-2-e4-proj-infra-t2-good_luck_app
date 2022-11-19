@@ -24,9 +24,9 @@ export default function (props) {
   const simpleAlertHandler = () => {
     alert('USUARIO INVALIDO');
   };
-  const gatCadastro = async ()=>{
-    props.navigation.navigate('Cadastro')
-  }
+  const gatCadastro = async () => {
+    props.navigation.navigate('Cadastro');
+  };
 
   const getUser = async () => {
     props.navigation.navigate('Index');
@@ -73,7 +73,7 @@ export default function (props) {
       <TouchableOpacity style={styles.button} onPress={() => getUser()}>
         <Text style={styles.text}>ENTRAR</Text>
       </TouchableOpacity>
-            <TouchableOpacity style={styles.button} onPress={() => gatCadastro()}>
+      <TouchableOpacity style={styles.button} onPress={() => gatCadastro()}>
         <Text style={styles.text}>CADASTRAR</Text>
       </TouchableOpacity>
     </View>
