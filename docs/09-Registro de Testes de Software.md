@@ -100,4 +100,4 @@
 |Passos                   | 1) Acessar o aplicativo 2) Clicar no botão HISTORICO 3) Visualizar a tela de historico |
 |Critérios de Êxito       |A página deve apresentar o historico de todos os sorteios realizados |
 ![Caso de Teste](img/registroMobile/CT-01Mobile.JPG)
-![Caso de Teste](img/registroMobile/CT-03MOBILE.JPG)
+![Caso de Teste](img/registroMobile/CT-04MOBILE.JPG)
