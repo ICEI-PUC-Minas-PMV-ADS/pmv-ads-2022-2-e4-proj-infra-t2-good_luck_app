@@ -22,7 +22,7 @@ export default function (props) {
     alert('Usuario Cadastrado');
   };
 
-  const uri2 = `https://the-news-back-end.herokuapp.com/user/register`
+  const uri2 = `https://good-luck-app-back-end.herokuapp.com/user/create`
   
   const cadastrar = async () => {
       const resp = await fetch(uri2, {
@@ -31,15 +31,15 @@ export default function (props) {
           Accept: 'application/json',
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ nome, email, senha }),
+        body: JSON.stringify({ name, email, password }),
       });
       simpleAlertHandler()
       props.navigation.navigate('Login')
   };
 
-const [nome, setNome] = useState('')
+const [name, setNome] = useState('')
 const [email, setEmail] = useState('')
-const [senha, setSenha] = useState('')
+const [password, setSenha] = useState('')
 
   return (
     <View style={styles.container}>
