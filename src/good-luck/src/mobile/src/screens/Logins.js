@@ -29,27 +29,37 @@ export default function (props) {
   };
 
   const getUser = async () => {
+    const uri2 = 'https://good-luck-app-back-end.herokuapp.com/users/auth';
+
+    try {
+      const resp = await fetch(uri2, {
+        method: 'POST',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          username: email,
+          password: senha,
+        }),
+      });
+      props.setEmail(email);
+      console.log(resp);
+      if (!resp.ok) {
+        throw new Error(`Error! status: ${resp.status}`);
+      }
+      const result = await resp.json();
+      if (result.message === 'Incorrect Username and/or Password!') {
+        console.log('Usuário não validado');
+        return false;
+      } else {
+        console.log('Usuário validado');
+        return props.navigation.navigate('Index');
+      }
+    } catch (err) {
+      console.log(err);
+    }
     props.navigation.navigate('Index');
-    // try {
-    //   const response = await fetch(
-    //     `http://localhost:8080/users/auth`
-
-    //   );
-    //   const jsonObj = await response.json();
-    //   setData(jsonObj);
-    //   const emailMap = data.map((dado) =>{
-    //   if (dado.email == email ){
-    //     props.navigation.navigate('Index')
-    //   }
-    //   else {
-    //     simpleAlertHandler()
-    //   }
-
-    //   });
-
-    // } catch (error) {
-    //   console.error(error);
-    // }
   };
 
   return (

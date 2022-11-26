@@ -101,3 +101,13 @@
 |Critérios de Êxito       |A página deve apresentar o historico de todos os sorteios realizados |
 ![Caso de Teste](img/registroMobile/CT-01Mobile.JPG)
 ![Caso de Teste](img/registroMobile/CT-04MOBILE.JPG)
+
+
+|Caso de Teste            | CT-05 – Autenticação Mobile |
+|-------------------------|-----------------------------------------|
+|Requisitos Associados    | RF-01                                   |
+|Objetivo do teste        |O usuário ser autenticado pela aplicação |
+|Passos                   | 1) Acessar o aplicativo 2) Clicar no botão ENTRAR 3) Visualizar a tela inicial |
+|Critérios de Êxito       |O console deve apresentar a API autenticação e o usuario deve acessar o aplicativo |
+![Caso de Teste](img/registroMobile/autenticação.JPG)
+![Caso de Teste](img/registroMobile/autenticação2.JPG)
