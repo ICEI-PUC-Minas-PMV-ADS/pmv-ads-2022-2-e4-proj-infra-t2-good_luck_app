@@ -3,7 +3,7 @@ import { Button, View, Text } from 'react-native';
 import { TextInput, Alert } from 'react-native-paper';
 
 export default function Cadastrar(props) {
-  const uri2 = 'https://good-luck-app-back-end.herokuapp.com/raffle/create';
+  const uri2 = 'https://localhost:8080/raffle/create';
 
   // Limpa os campos após postagem
   const [nomeSorteio, setNomeSorteio] = useState('');

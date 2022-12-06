@@ -29,7 +29,7 @@ export default function (props) {
   };
 
   const getUser = async () => {
-    const uri2 = 'https://good-luck-app-back-end.herokuapp.com/users/auth';
+    const uri2 = 'http://localhost:8080/users/auth';
 
     try {
       const resp = await fetch(uri2, {

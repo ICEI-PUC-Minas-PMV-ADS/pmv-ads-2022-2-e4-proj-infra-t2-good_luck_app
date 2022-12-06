@@ -2,8 +2,8 @@ const express = require('express');
 const mysql = require('mysql');
 const cors = require('cors');
 
-const swaggerUi = require('swagger-ui-express')
-const swaggerFile = require('./swagger_output.json')
+// const swaggerUi = require('swagger-ui-express')
+// const swaggerFile = require('./swagger_output.json')
 
 const app = express();
 const db = mysql.createPool({
@@ -177,6 +177,6 @@ app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}.`);
 });
 
-app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+// app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
-require('./endpoints')(app)
+// require('./endpoints')(app)

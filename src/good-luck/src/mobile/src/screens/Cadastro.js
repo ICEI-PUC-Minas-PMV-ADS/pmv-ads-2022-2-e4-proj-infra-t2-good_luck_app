@@ -22,7 +22,7 @@ export default function (props) {
     alert('Usuario Cadastrado');
   };
 
-  const uri2 = `https://good-luck-app-back-end.herokuapp.com/user/create`
+  const uri2 = `http://localhost:8080/user/create`
   
   const cadastrar = async () => {
       const resp = await fetch(uri2, {

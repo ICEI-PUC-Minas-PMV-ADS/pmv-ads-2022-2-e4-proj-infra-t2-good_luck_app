@@ -15,21 +15,31 @@ const History = ({ navigation }) => {
   const [result, setResult] = useState([]);
   useEffect(() => {
     apiGetRaffles();
-  }, []);
+  }, [setResult]);
 
   const apiGetRaffles = async () => {
+    try {
     const data = await fetch(
-      'https://good-luck-app-back-end.herokuapp.com/raffle/all',
+      'http://192.168.0.35:8080/raffle/all',
       {
         method: 'GET',
       }
     );
     const jsonData = await data.json();
     setResult(jsonData);
+    }catch(error) {
+      console.log(error)
+   }
+
+
   };
+
+  const sorteio = async () => {
+    alert('Numero sorteado: 98');
+  }
   return (
     <View>
-      <ScrollView >
+      <ScrollView horizontal={true}>
         <FlatList
           data={result}
           keyExtractor={({ messageId }, index) => messageId}
@@ -48,7 +58,7 @@ const History = ({ navigation }) => {
                     <Text>Nome: {item.RaffleName}</Text>
                     <TouchableOpacity
                       style={styles.contentFooterbtn}
-                      onPress={() => {}}>
+                      onPress={() => sorteio()}>
                       <Text>SORTEAR</Text>
 
                       <Image
